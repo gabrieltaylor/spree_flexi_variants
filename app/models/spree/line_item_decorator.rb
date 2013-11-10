@@ -34,7 +34,8 @@ module Spree
     end
 
     def cost_price
-      variant.cost_price + ad_hoc_option_values.map(&:cost_price).inject(0, :+)
+      #due to the fact that cost_price can be nil we must convert it into bigdecimal (to_f will make nil->0 without losing precision in case of value)
+      variant.cost_price.to_f.to_d + ad_hoc_option_values.map(&:cost_price).inject(0, :+)
     end
 
     def cost_money
