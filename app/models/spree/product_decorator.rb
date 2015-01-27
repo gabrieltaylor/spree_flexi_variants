@@ -9,7 +9,6 @@ module Spree
     # allowed customizations
     has_and_belongs_to_many :product_customization_types
 
-
     private
 
     def attach_option_values(ad_hoc_option_type)
