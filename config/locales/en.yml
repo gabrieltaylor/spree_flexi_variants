@@ -8,6 +8,7 @@ en:
   add: "Add"
   add_customizable_product_option: 'Add Customizable Option'
   add_option_values: "Add Option Values"
+  add_option_type: "Add Option Type"
   add_product_customization_type: 'Add Product Customization Type'
   add_product_customization_types: 'Add Product Customization Types'
   customizable_product_options: 'Customizable Options'
