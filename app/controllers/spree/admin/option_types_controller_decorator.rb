@@ -29,6 +29,7 @@ module Spree
       @product.ad_hoc_option_types.each do |option|
         selected_option_types << option.option_type
       end
+      @available_option_types = @available_option_types.to_a
       @available_option_types.delete_if {|ot| selected_option_types.include? ot}
     end
 
