@@ -33,7 +33,7 @@ module Spree
     end
 
     def load_product_decorator
-      load_product
+      @product = Product.friendly.find(params[:product_id])
     end
 
   end
